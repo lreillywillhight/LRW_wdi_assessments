@@ -12,12 +12,24 @@ console.log('loading script.js')
 
 plusButton.addEventListener('click', function (e) {
   document.getElementById('readoutText').innerHTML = parseInt(document.getElementById('readoutText').innerHTML) + parseInt(document.getElementById('entryField').value)
+  if (parseInt(document.getElementById('readoutText').innerHTML) < 0) {
+    document.getElementById('readoutText').innerHTML = document.getElementById('readoutText').innerHTML.fontcolor('red')
+  }
+  else {
+    document.getElementById('readoutText').innerHTML = document.getElementById('readoutText').innerHTML.fontcolor('black')
+  }
 })
- 
+
 minusButton.addEventListener('click', function (e) {
   document.getElementById('readoutText').innerHTML = parseInt(document.getElementById('readoutText').innerHTML) - parseInt(document.getElementById('entryField').value)
+  if (parseInt(document.getElementById('readoutText').innerHTML) < 0) {
+    document.getElementById('readoutText').innerHTML = document.getElementById('readoutText').innerHTML.fontcolor('red')
+  }
+  else {
+    document.getElementById('readoutText').innerHTML = document.getElementById('readoutText').innerHTML.fontcolor('black')
+  }
 })
- 
+
 
 
 
