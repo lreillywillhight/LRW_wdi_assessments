@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  height: 72px;
+  width: 72px;
+  background-color: gray;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 0;
+  border-radius: 10px;
+}
+
+input {
+  height: 56px;
+  padding: 12px 0 0 0;
+  border-radius: 10px;
+  border: 4px solid gray;
+}
+
+#readoutText {
+  padding: 100px 0;
+  font-size: 72px;
+  font-weight: bold;
+}
